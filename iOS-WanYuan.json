@@ -116,7 +116,7 @@
         }
       ]
     },
-    "userAgent" : "Computer",
+    "userAgent" : "Phone",
     "searchRule" : {
       "bookListRule" : {
         "updatedAtXpath" : "\/div[2]\/p[2]\/<\/span>·*",
