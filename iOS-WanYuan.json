@@ -1,0 +1,148 @@
+[
+  {
+    "bookDetailRule" : {
+      "nameXpath" : "\/\/*[@id=\"info\"]\/h1",
+      "updatedAtXpath" : "\/\/*[@id=\"info\"]\/p[3]",
+      "lastChapterXpath" : "\/\/*[@id=\"info\"]\/p[4]\/a",
+      "chapterListRule" : {
+        "nameXpath" : "\/a",
+        "urlXpath" : "\/a\/@href",
+        "listXpath" : "\/\/*[@id=\"list\"]\/dl\/*"
+      },
+      "authorXpath" : "\/\/*[@id=\"info\"]\/p[1]\/作    者*",
+      "coverXpath" : "\/\/*[@id=\"fmimg\"]\/img\/@src"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "分类推荐",
+          "authorXpath" : "\/dl\/dt\/span",
+          "coverXpath" : "\/div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/div[1]\/div[@class=\"item\"]",
+          "urlXpath" : "\/dl\/dt\/a\/@href",
+          "introXpath" : "\/dl\/dd",
+          "nameXpath" : "\/dl\/dt\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "\/a",
+        "urlXpath" : "\/a\/@href",
+        "listXpath" : "\/\/*[@class=\"nav\"]\/ul\/li[position()>2 and position()<9]"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "\/dl\/dt\/span",
+          "coverXpath" : "\/div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/div[1]\/div[@class=\"item\"]",
+          "urlXpath" : "\/dl\/dt\/a\/@href",
+          "introXpath" : "\/dl\/dd",
+          "nameXpath" : "\/dl\/dt\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "bookListRule" : {
+        "nameXpath" : "\/td[1]\/a",
+        "listXpath" : "\/\/*[@id=\"checkform\"]\/table\/\/tr[position()>1]",
+        "updatedAtXpath" : "\/td[4]",
+        "lastChapterXpath" : "\/td[2]\/a",
+        "urlXpath" : "\/td[1]\/a\/@href",
+        "authorXpath" : "\/td[3]"
+      },
+      "method" : "POST",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.ibiquges.info\/modules\/article\/waps.php",
+      "params" : "searchkey=%s",
+      "keyEncoding" : "UTF-8"
+    },
+    "group" : "WEB",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/*[@class=\"bottem2\"]\/a[4]\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/*[@id=\"content\"]"
+    },
+    "name" : "香书小说",
+    "url" : "https:\/\/www.ibiquges.info"
+  },
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/*[@id=\"intro\"]",
+      "authorXpath" : "\/\/*[@class=\"ix-panel ix-border-tb ix-book\"]\/div[2]\/p[1]\/a",
+      "chapterListRule" : {
+        "nameXpath" : "\/a",
+        "urlXpath" : "\/a\/@href",
+        "listXpath" : "\/\/*[@class=\"chapterlist\"]\/ul\/*"
+      },
+      "updatedAtXpath" : "\/\/*[@class=\"ix-panel ix-border-tb ix-book\"]\/div[2]\/p[5]",
+      "coverXpath" : "\/\/*[@class=\"ix-panel ix-border-tb ix-book\"]\/div[1]\/img\/@src",
+      "lastChapterXpath" : "\/\/*[@class=\"ix-panel ix-border-tb ix-book\"]\/div[2]\/p[4]\/a",
+      "nameXpath" : "\/\/*[@class=\"ix-header ix-border ix-page\"]\/h1",
+      "categoryXpath" : "\/\/*[@class=\"ix-panel ix-border-tb ix-book\"]\/div[2]\/p[2]\/a"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "updatedAtXpath" : "\/div[2]\/p[2]\/<\/span>·*",
+          "lastChapterXpath" : "\/div[2]\/p[3]\/a",
+          "groupTitleFixed" : "分类推荐",
+          "authorXpath" : "\/div[2]\/div\/div[1]\/a",
+          "coverXpath" : "\/div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@class=\"ix-list ix-border-t\"]\/*",
+          "urlXpath" : "\/div[2]\/h3\/a\/@href",
+          "introXpath" : "\/div[2]\/p[1]",
+          "nameXpath" : "\/div[2]\/h3\/a",
+          "categoryXpath" : "\/div[2]\/div\/div[2]\/span\/em[1]"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "\/a",
+        "urlXpath" : "\/a\/@href",
+        "listXpath" : "\/\/*[@class=\"ix-list ix-border-t sort\"]\/*"
+      },
+      "bookListRules" : [
+        {
+          "updatedAtXpath" : "\/div[2]\/p[2]\/<\/span>·*",
+          "lastChapterXpath" : "\/div[2]\/p[3]\/a",
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "\/div[2]\/div\/div[1]\/a",
+          "coverXpath" : "\/div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@class=\"ix-panel ix-border-tb\"][2]\/ul\/*",
+          "urlXpath" : "\/div[2]\/h3\/a\/@href",
+          "introXpath" : "\/div[2]\/p[1]",
+          "nameXpath" : "\/div[2]\/h3\/a",
+          "categoryXpath" : "\/div[2]\/div\/div[2]\/span\/em[1]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "bookListRule" : {
+        "updatedAtXpath" : "\/div[2]\/p[2]\/<\/span>·*",
+        "lastChapterXpath" : "\/div[2]\/p[3]\/a",
+        "authorXpath" : "\/div[2]\/div\/div[1]\/a",
+        "coverXpath" : "\/div[1]\/a\/img\/@src",
+        "listXpath" : "\/\/*[@class=\"ix-list ix-border-t\"]\/*",
+        "urlXpath" : "\/div[2]\/h3\/a\/@href",
+        "introXpath" : "\/div[2]\/p[1]",
+        "nameXpath" : "\/div[2]\/h3\/a",
+        "categoryXpath" : "\/\/*[@class=\"ix-panel ix-border-t ix-book\"]\/div\/div[2]\/span\/em[1]"
+      },
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/m.aixdzs.com\/search",
+      "params" : "k=%s",
+      "keyEncoding" : "UTF-8"
+    },
+    "group" : "WEB",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/*[@class=\"read-prog-prev chapter-paging\"]\/@href",
+      "contentXpath" : "\/\/*[@class=\"page-content\"]\/section",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "s\/<p>(.*)<\\\/p>\/$1<br>#g"
+    },
+    "name" : "爱下电子书",
+    "url" : "https:\/\/m.aixdzs.com"
+  }
+]
